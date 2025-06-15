@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+   <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@drawable/background">
+
+       <TextView
+           android:id="@+id/myAge"
+           android:layout_width="290dp"
+           android:layout_height="103dp"
+           android:layout_marginStart="20dp"
+           android:layout_marginTop="64dp"
+           android:layout_marginEnd="20dp"
+           android:background="#FFEB3B"
+           android:gravity="center"
+           android:text="@string/myAge"
+           android:textColor="#0D0A0A"
+           android:textSize="16sp"
+           android:textStyle="bold"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <EditText
+           android:id="@+id/year"
+           android:layout_width="115dp"
+           android:layout_height="45dp"
+           android:layout_marginTop="112dp"
+           android:autofillHints=""
+           android:background="#FFEB3B"
+           android:ems="10"
+           android:gravity="center"
+           android:hint="@string/year"
+           android:importantForAutofill="no"
+           android:inputType="number"
+           android:textColor="#070606"
+           android:textColorHint="#070707"
+           android:textSize="14sp"
+           android:textStyle="bold"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.05"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/myAge"
+           tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+       <EditText
+           android:id="@+id/month"
+           android:layout_width="115dp"
+           android:layout_height="45dp"
+           android:layout_marginTop="112dp"
+           android:background="#FFEB3B"
+           android:ems="10"
+           android:gravity="center"
+           android:hint="@string/month"
+           android:importantForAutofill="no"
+           android:inputType="number"
+           android:textColor="#070606"
+           android:textColorHint="#0E0F0E"
+           android:textSize="14sp"
+           android:textStyle="bold"
+           app:layout_constraintEnd_toStartOf="@+id/day"
+           app:layout_constraintHorizontal_bias="0.514"
+           app:layout_constraintStart_toEndOf="@+id/year"
+           app:layout_constraintTop_toBottomOf="@+id/myAge"
+           tools:ignore="Autofill,TouchTargetSizeCheck,TextContrastCheck" />
+
+       <EditText
+           android:id="@+id/day"
+           android:layout_width="115dp"
+           android:layout_height="45dp"
+           android:layout_marginTop="112dp"
+           android:layout_marginEnd="16dp"
+           android:background="#FFEB3B"
+           android:ems="10"
+           android:gravity="center"
+           android:hint="@string/day"
+           android:inputType="number"
+           android:textColor="#0D0D0D"
+           android:textColorHint="#0A0B0A"
+           android:textSize="14sp"
+           android:textStyle="bold"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/myAge"
+           tools:ignore="Autofill,TouchTargetSizeCheck,TextContrastCheck" />
+
+       <Button
+           android:id="@+id/clacMyAge"
+           android:layout_width="151dp"
+           android:layout_height="50dp"
+           android:text="@string/calc_my_Age"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/day"
+           app:layout_constraintVertical_bias="0.163"
+           tools:ignore="TextSizeCheck" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

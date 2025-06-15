@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Find My Age</string>
+    <string name="calc_my_Age">Calculate My Age</string>
+    <string name="year">My brith year</string>
+    <string name="month">My brith month</string>
+    <string name="day">My brith day</string>
+    <string name="myAge">My Age</string>
+</resources>
