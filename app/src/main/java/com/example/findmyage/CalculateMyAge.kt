@@ -30,8 +30,8 @@ class CalculateMyAge {
         cMonth = cDate.getCurrentMonth()
         myMonth = if (month > cMonth && cDay > day){
             12 - (month - cMonth)
-        } else if (cDay < day){
-            12 - (month - cMonth) - 1
+        } else if (cDay < day && cMonth > month){
+            cMonth - (month + 1)
         } else{
             cMonth - month
         }
@@ -40,7 +40,7 @@ class CalculateMyAge {
     fun getMyDay(day : Int): Int {
         cDay = cDate.getCurrentDay()
         myDay = if (day > cDay){
-            31 - (day - cDay)
+            30 - (day - cDay)
         } else{
             cDay - day
         }
